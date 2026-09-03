@@ -44,6 +44,9 @@ next-env.d.ts
 
 # personal experiment
 sandbox/
+# database
+*.db
+
 
 /notes
 
