@@ -12,7 +12,7 @@ export default async function HomePage() {
       <Navbar />
         {/* ⬇️ SEMUA KONTEN MASUK KE SINI */}
         <section className="mx-auto max-w-7xl px-6 pt-16 pb-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold">
+          <h1 className="text-4xl md:text-5xl font-light">
             Discover Your Favorite Games
           </h1>
           <p className="mt-3 text-white/85">
