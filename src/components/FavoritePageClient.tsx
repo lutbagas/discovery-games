@@ -39,6 +39,9 @@ export function FavoritePageClient() {
         <div className='p-6 bg-gradient-to-br from-indigo-800/30 via-sky-800/30 to-fuchsia-800/30  rounded-2xl'>
             <h1 className='text-2xl text-center mb-4'>My Favorites</h1>
             <h2 className='text-md bg-sky-500/40 text-center px-2 py-2 mx-120 my-2'>Favorite: {favorites.length}</h2>
+            <div className="flex justify-end">
+                <Link href={"/catalog"} className=" text-md text-gray-200  mb-5 hover:text-gray-50">Explore Games</Link>
+            </div>
             <div className='bg-white/5 grid p-2 grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {favorites.map((game) => (
                     <div key={game.id} className='border border-white/30 px-6 py-6 bg-sky-500/10 mx-auto my-3 rounded-xl '>

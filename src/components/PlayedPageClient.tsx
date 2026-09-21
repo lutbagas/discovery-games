@@ -37,6 +37,9 @@ export function PlayedPageCLient() {
         <div className="min-h-screen bg-linear-to-br from-purple-600/10 via-sky-600/20 to-purple-600/20 p-5 rounded-2xl">
             <h1 className="text-2xl text-center p-3">My Played</h1>
             <h2 className="text-xl m-3 text-center mx-120 py-2 px-3 bg-sky-500/40 hover:ring-2 ring-sky-400 hover:transition-colors duration-500 ease-in">Played: {Played.length}</h2>
+            <div className="flex justify-end">
+                <Link href={"/catalog"} className=" text-md text-gray-200  mb-5 hover:text-gray-50">Explore Games</Link>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  gap-4">
                 {Played.map((game) => (
                     <div key={game.id} className="object-cover bg-cyan-600/5 mx-auto p-8 border-2 border-white/30 rounded-2xl">
